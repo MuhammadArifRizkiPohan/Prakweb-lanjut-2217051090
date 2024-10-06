@@ -10,7 +10,7 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background-color: #f8f9fa;
+            background-color: whitesmoke;
         }
 
         .profile-container {
@@ -22,8 +22,8 @@
 
         
         .profile-image {
-            width: 300px;  /* Lebar lebih besar */
-            height: 300px; /* Tinggi lebih besar */
+            width: 300px;  
+            height: 300px; 
             border-radius: 40%;
             object-fit: cover;
             margin-bottom: 20px;
@@ -54,8 +54,7 @@
 <body>
     <div class="container">
         <div class="profile-container">
-            <!-- Gambar profil diperbesar, tanpa border biru -->
-            <img src="{{ asset('images\coba (1).JPG') }}" alt="Profile Picture" class="profile-image">
+            <img src="{{ asset('images\profil.JPG') }}" alt="Profile Picture" class="profile-image">
             <div class="profile-info">
                 <div class="info-item">
                     <label></label> <?= $nama ?>

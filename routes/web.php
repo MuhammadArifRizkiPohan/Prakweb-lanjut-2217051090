@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 
 // Rute untuk menampilkan profil pengguna
-Route::get('/user/profile/{nama?}/{kelas?}/{npm?}', [UserController::class, 'profile'])->name('user.profile');
+Route::get('/profile/{nama?}/{kelas?}/{npm?}', [UserController::class, 'profile'])->name('user.profile');
 
 // Rute untuk membuat pengguna baru
 Route::get('/user/create', [UserController::class, 'create'])->name('user.create');
